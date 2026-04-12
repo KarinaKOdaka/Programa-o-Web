@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(192, 208, 238);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(41, 89, 153);
+    color: white;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    background-color: rgb(118, 171, 252);
+    padding: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    color: #1a3a63;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #b11116; /* Vermelho FATEC ao passar o mouse */
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
+    border-radius: 8px;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+table td, table th {
+    border: 1px solid #295999;
+    padding: 10px;
+    text-align: center;
+}
+
+table thead {
+    background-color: #295999;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #d1d9e5; /* Destaque ao passar o mouse na linha */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #295999;
+    color: white;
+}
+
+footer a {
+    color: #ffda44;
+}
