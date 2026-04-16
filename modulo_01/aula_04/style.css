@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-    color: #b11116; /* Vermelho FATEC ao passar o mouse */
+    color: #b11116; 
     text-decoration: underline;
 }
 
@@ -47,7 +47,7 @@ main {
 section {
     margin-bottom: 30px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 8px;
 }
 
@@ -75,7 +75,7 @@ table tbody tr:nth-child(even) {
 }
 
 table tbody tr:hover {
-    background-color: #d1d9e5; /* Destaque ao passar o mouse na linha */
+    background-color: #d1d9e5; 
 }
 
 img {

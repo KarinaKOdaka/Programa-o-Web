@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Fatec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Exercício final</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Olá, meu nome é Karina</h1>
+            <p>Estudante da Fatec Itapetininga</p><br>
+            <a href="#projetos" class="btn-cta">Ver Projetos</a>
+        </section>
+
+        <section id="sobre" class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <img src="images/perfil.jpeg" alt="Minha Foto de Perfil" class="foto-perfil">
+                <p>Atualmente sou estudante do curso de Análise e Desenvolvimento de Sistemas na Fatec Itapetininga.</p>
+            </div>
+        </section>
+
+        <section id="hobbies" class="container">
+            <h2>Meus Hobbies</h2>
+            <div class="hobbies-grid">
+                
+                <div class="hobby-card">
+                    <span class="badge">Novo</span>
+                    <img src="img/projeto-1.jpg" alt="Capa do Projeto 1">
+                    <div class="card-body">
+                        <h3>Landing Page</h3>
+                        <p>Layout responsivo feito com Flexbox e Grid.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card">
+                    <span class="badge" style="background-color: #10b981;">Concluído</span>
+                    <img src="img/projeto-2.jpg" alt="Capa do Projeto 2">
+                    <div class="card-body">
+                        <h3>App Financeiro</h3>
+                        <p>Aplicação focada em manipulação de dados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <form class="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Como posso te ajudar?"></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Fatec Itapetininga &copy; 2026 - Projeto Aula 11</p>
+    </footer>
+
+</body>
+</html>
