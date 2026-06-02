@@ -7,26 +7,27 @@
     <title>Silent Hill</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body class="bg-silent">
+
+<body class="bg-silent" id="topo">
     <header>
         <div class="logo">
             <img src="../imagens/Silent_Hill_2022_Logo.png" alt="Logo Silent Hill" class="logo-img">
         </div>
 
         <nav>
-            <a href="../index.html">
-                Homepage
-            </a>
-            <a href="Jogos da franquia.html">
-                Jogos da franquia
-            </a>
-            <a href="Personagens principais.html">
-                Personagens principais
-            </a>
-            <a href="Inimigos.html">
-                Inimigos
-            </a>
+            <a href="../index.html">Homepage</a>
+            <a href="Jogos da franquia.html">Jogos da franquia</a>
+            <a href="Personagens principais.html">Personagens principais</a>
+            <a href="Inimigos.html">Inimigos</a>
         </nav>
+
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
     </header>
 
     <main>
@@ -198,5 +199,8 @@
             Site desenvolvido para estudos de HTML e CSS
         </p>
     </footer>
+
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
+    <script src="../pesquisa.js"></script>
 </body>
 </html>

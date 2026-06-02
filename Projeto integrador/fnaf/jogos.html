@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="bg-fnaf">
+<body class="bg-fnaf" id="topo">
 
 	<header>
 
@@ -23,25 +23,275 @@
 			<a href="lore.html">Lore</a>
 		</nav>
 
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
 	</header>
 
 	<main class="conteudo">
+        
+        <!-- FNAF 1 -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's (2014)</h2>
+                <img src="fnaf1.png" alt="Five Nights at Freddy's 1">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    O jogo que deu início ao fenômeno apresenta o guarda Mike 
+                    Schmidt aceitando um emprego noturno na pizzaria Freddy 
+                    Fazbear's Pizza. Sentado na sala de segurança, o jogador 
+                    deve monitorar o movimento de quatro robôs animatrônicos 
+                    através de um monitor de câmeras. A mecânica se baseia no 
+                    controle rígido de uma quantidade limitada de energia 
+                    elétrica, usada para fechar as portas de segurança e 
+                    acender as luzes dos corredores antes que os monstros 
+                    consigam invadir a sala.
+                </p>
+            </div>
+        </section>
 
-		<h1>Jogos da Franquia</h1>
+        <!-- FNAF 2 -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's 2 (2014)</h2>
+                <img src="fnaf2.png" alt="Five Nights at Freddy's 2">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Funcionando como uma prequela do primeiro jogo, este título 
+                    introduz uma pizzaria muito maior com novos modelos de 
+                    robôs chamados Toy Animatronics, além de manter as versões 
+                    antigas e desgastadas. A jogabilidade remove completamente 
+                    as portas de segurança da sala do guarda. Para sobreviver, 
+                    o jogador precisa equipar rapidamente uma máscara vazia do 
+                    Freddy para enganar os robôs, usar uma lanterna para 
+                    afastar ameaças e dar corda constantemente em uma caixinha 
+                    de música remota.
+                </p>
+            </div>
+        </section>
 
-		<ul>
-			<li>ESCREVA AQUI</li>
-			<li>ESCREVA AQUI</li>
-			<li>ESCREVA AQUI</li>
-			<li>ESCREVA AQUI</li>
-			<li>ESCREVA AQUI</li>
-		</ul>
+        <!-- FNAF 3 -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's 3 (2015)</h2>
+                <img src="fnaf3.png" alt="Five Nights at Freddy's 3">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Passado trinta anos após o fechamento da pizzaria original, 
+                    o cenário muda para a Fazbear's Fright, uma atração de 
+                    terror baseada nos mitos urbanos da antiga empresa. O 
+                    jogador lida com apenas um animatrônico real e letal 
+                    chamado Springtrap, que carrega os restos mortais do 
+                    assassino William Afton. A mecânica exige o uso de áudios 
+                    infantis nas câmeras para atrair o monstro para longe e o 
+                    reinício constante de sistemas de ventilação defeituosos 
+                    que causam alucinações fantasmas.
+                </p>
+            </div>
+        </section>
 
+        <!-- FNAF 4 -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's 4 (2015)</h2>
+                <img src="fnaf4.png" alt="Five Nights at Freddy's 4">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    O capítulo mais sombrio da linha clássica transfere a ação 
+                    para o quarto de uma criança aterrorizada. Sem câmeras ou 
+                    sistemas elétricos, a jogabilidade depende inteiramente dos 
+                    fones de ouvido do jogador para escutar a respiração e os 
+                    passos das versões monstruosas conhecidas como Nightmare 
+                    Animatronics. É necessário correr entre as duas portas 
+                    laterais, o armário e a cama para afastar as criaturas 
+                    usando apenas o feixe de luz de uma lanterna de brinquedo.
+                </p>
+            </div>
+        </section>
+
+        <!-- SISTER LOCATION -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Sister Location (2016)</h2>
+                <img src="sister_location.png" alt="FNAF Sister Location">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Este jogo altera a fórmula estática ao introduzir uma 
+                    estrutura baseada em missões narrativas diárias em um 
+                    complexo de manutenção subterrâneo chamado Circus Baby's 
+                    Entertainment and Rental. O jogador assume o controle do 
+                    técnico Michael Afton e precisa rastejar por tubulações de 
+                    ventilação, consertar painéis elétricos no escuro e 
+                    interagir com os robôs da linha Funtime, equipados com 
+                    inteligência artificial avançada e placas faciais 
+                    articuladas.
+                </p>
+            </div>
+        </section>
+
+        <!-- PIZZERIA SIMULATOR -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Freddy Fazbear's Pizzeria Simulator (2017)</h2>
+                <img src="pizzeria_simulator.png" alt="FNAF Pizzeria Simulator">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Misturando dois gêneros distintos, o jogo começa como um 
+                    simulador de gerenciamento leve onde você compra decorações, 
+                    brinquedos e organiza a sua própria pizzaria Fazbear. No 
+                    entanto, durante o período da noite, o jogo se transforma 
+                    em um terror de sobrevivência clássico. O jogador deve 
+                    realizar tarefas de escritório em um computador ruidoso 
+                    enquanto usa sistemas de áudio e detectores de movimento 
+                    para evitar que os animatrônicos resgatados das ruas entrem 
+                    pelas tubulações.
+                </p>
+            </div>
+        </section>
+
+        <!-- ULTIMATE CUSTOM NIGHT -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Ultimate Custom Night (2018)</h2>
+                <img src="ucn.png" alt="Ultimate Custom Night">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Funcionando como o desafio definitivo para os fãs, o jogo 
+                    reúne cinquenta personagens robóticos de todos os títulos 
+                    anteriores em uma única noite customizável. O jogador pode 
+                    ajustar o nível de dificuldade de cada monstro 
+                    individualmente. A jogabilidade exige maestria absoluta 
+                    sobre dezenas de ferramentas simultâneas, incluindo o 
+                    controle de duas portas de escritório, tubos de ventilação, 
+                    sistema de temperatura, geradores de energia e caixas de 
+                    música globais.
+                </p>
+            </div>
+        </section>
+
+        <!-- HELP WANTED -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Help Wanted (2019)</h2>
+                <img src="help_wanted.png" alt="FNAF Help Wanted">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Projetado originalmente para a tecnologia de realidade 
+                    virtual, o jogo é contextualizado na história como uma 
+                    coletânea virtual criada pela Fazbear Entertainment para 
+                    ridicularizar as lendas urbanas sobre seu passado. Ele 
+                    recria as fases clássicas dos três primeiros jogos com 
+                    gráficos tridimensionais avançados e adiciona novos 
+                    minijogos focados no reparo interno de circuitos e fusíveis 
+                    de animatrônicos gigantes enquanto eles observam seus 
+                    movimentos no escuro.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECURITY BREACH -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Security Breach (2021)</h2>
+                <img src="security_breach.png" alt="FNAF Security Breach">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    A maior transição tecnológica da série leva o jogador a 
+                    explorar livremente em três dimensões o Freddy Fazbear's 
+                    Mega Pizzaplex, um shopping center futurista de três andares 
+                    iluminado por neon. No controle do jovem garoto Gregory, 
+                    você deve usar mecânicas de furtividade para se esconder 
+                    dos guardas e dos Glamrock Animatronics. O grande 
+                    diferencial é a capacidade de entrar temporariamente no 
+                    corpo do robô Freddy para transitar em segurança pelas 
+                    salas do complexo.
+                </p>
+            </div>
+        </section>
+
+        <!-- HELP WANTED 2 -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Help Wanted 2 (2023)</h2>
+                <img src="help_wanted_2.png" alt="FNAF Help Wanted 2">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    A segunda coletânea em realidade virtual expande as 
+                    atividades de simulação técnica e profissional dentro do 
+                    universo da franquia. O jogador assume o papel de um novo 
+                    funcionário da empresa e realiza uma série de tarefas 
+                    divididas em categorias distintas, como a preparação de 
+                    pedidos de comida na cozinha do shopping, a aplicação de 
+                    maquiagem artística nos robôs Glamrock e testes de reflexo 
+                    rápidos em brinquedos de tiro ao alvo no escuro.
+                </p>
+            </div>
+        </section>
+
+        <!-- INTO THE PIT -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Into the Pit (2024)</h2>
+                <img src="into_the_pit.png" alt="FNAF Into the Pit">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Desenvolvido em estilo de arte pixelada bidimensional, o jogo é 
+                    uma adaptação direta do primeiro livro da antologia de contos de 
+                    terror da marca [Steam]
+                    (https://store.steampowered.com/app/2638370/Five_Nights_at_Freddys_Into_the_Pit/). 
+                    O protagonista Oswald descobre uma piscina de bolinhas misteriosa 
+                    em uma pizzaria abandonada que o permite viajar no tempo até o 
+                    ano de 1985. A jogabilidade foca na exploração de cenários, na 
+                    coleta de itens essenciais para quebra-cabeças e em mecânicas 
+                    clássicas de esconderijo sob mesas e armários para escapar do 
+                    coelho Pittrap.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECRET OF THE MIMIC -->
+        <section class="card-jogo">
+            <div class="imagem-jogo">
+                <h2>Five Nights at Freddy's: Secret of the Mimic (2025)</h2>
+                <img src="secret_of_the_mimic.png" alt="FNAF Secret of the Mimic">
+            </div>
+            <div class="texto-jogo">
+                <p>
+                    Lançado em 13 de junho de 2025, este capítulo da franquia leva os 
+                    jogadores de volta às origens do horror na misteriosa Mansão das 
+                    Fantasias (Costume Manor) do inventor recluso Edwin Murray. No papel 
+                    de um técnico contratado pela Fazbear Entertainment, sua missão é 
+                    infiltrar-se na oficina abandonada para recuperar os esquemas e a 
+                    tecnologia de um valioso protótipo. Equipado com o dispositivo Data 
+                    Diver para hackear sistemas, você deve resolver enigmas e sobreviver 
+                    à perseguição do Mímico (The Mimic) — um perigoso endoesqueleto capaz 
+                    de se fundir a qualquer traje e imitar perfeitamente aquilo que você 
+                    mais teme.
+                </p>
+            </div>
+        </section>
 	</main>
-
 	<footer>
-		<p>Projeto Integrador - Programação Web</p>
-	</footer>
+        <p>
+            Site desenvolvido para estudos de HTML e CSS
+        </p>
+    </footer>
 
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
 </body>
 </html>

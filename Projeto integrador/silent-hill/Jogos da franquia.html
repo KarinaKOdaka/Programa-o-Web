@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="bg-silent">
+<body class="bg-silent" id="topo">
 
-    <header class="logo">
-        <img src="../imagens/Silent_Hill_2022_Logo.png" alt="Logo Silent Hill" class="logo-img">
+    <header>
+        <div class="logo">
+            <img src="../imagens/Silent_Hill_2022_Logo.png" alt="Logo Silent Hill" class="logo-img">
+        </div>
         <nav class="menu">
             <a href="index.html">Homepage</a>
             <a href="Jogos da franquia.html" class="ativo">Jogos da franquia</a>
@@ -19,158 +21,223 @@
             <a href="Inimigos.html">Inimigos</a>
         </nav>
 
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
     </header>
 
     <main class="conteudo">
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill (1999)</h2>
 
                 <img src="silent hill.png" alt="Silent Hill 1">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    O clássico que originou a franquia apresenta a 
+                    jornada de Harry Mason, um escritor que viaja de 
+                    férias com sua filha Cheryl. Após sofrer um 
+                    misterioso acidente de carro nos arredores de 
+                    Silent Hill, Harry acorda sozinho e descobre que a 
+                    cidade está deserta, coberta por uma névoa espessa 
+                    e neve fora de época. Durante a busca por sua filha, 
+                    ele explora locais macabros, transita entre o mundo 
+                    real e a terrível versão demoníaca da cidade, e 
+                    desvenda os planos de um culto religioso local 
+                    liderado por Dahlia Gillespie para ressuscitar um 
+                    deus antigo usando o poder de uma jovem chamada 
+                    Alessa.
                 </p>
-
             </div>
-
         </section>
 
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill 2 (2001)</h2>
 
                 <img src="silent hill 2.png" alt="Silent Hill 2">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
-                </p>
-
+                    Considerado um dos maiores marcos do terror 
+                    psicológico nos videogames, o segundo título 
+                    acompanha James Sunderland. Ele decide viajar até 
+                    a misteriosa cidade após receber uma carta de sua 
+                    esposa, Mary, convidando-o para encontrá-la no 
+                    lugar especial deles. O grande mistério é que Mary 
+                    faleceu de uma doença incurável há três anos. A 
+                    trama abandona os elementos religiosos do primeiro 
+                    jogo e foca na mente atormentada do protagonista, 
+                    onde os monstros bizarros e cenários industriais 
+                    degradados servem como manifestações físicas de sua 
+                    própria culpa, luto e desejos reprimidos, incluindo 
+                    o icônico perseguidor Pyramid Head.
+                </p> 
             </div>
-
         </section>
 
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill 3 (2003)</h2>
-
                 <img src="silent hill 3.jpg" alt="Silent Hill 3">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    Este capítulo funciona como uma continuação direta 
+                    da história do primeiro jogo. A protagonista é 
+                    Heather Mason, uma adolescente comum que começa a 
+                    ter pesadelos bizarros e repentinamente vê o 
+                    shopping local se transformar em um pesadelo de 
+                    sangue e ferrugem. Perseguida por membros do culto 
+                    conhecidos como A Ordem, liderados por Claudia 
+                    Wolf, Heather descobre que carrega em si a 
+                    reencarnação da divindade do culto e da própria 
+                    Alessa Gillespie. A jornada a força a viajar até a 
+                    macabra cidade turística para confrontar seu 
+                    passado e vingar a morte de seu pai adotivo, Harry 
+                    Mason.
                 </p>
-
             </div>
-
         </section>
 
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill 4: The Room (2004)</h2>
-
                 <img src="silent hill 4.jpg" alt="Silent Hill 4">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    Com uma proposta inovadora para a série, o jogo 
+                    acompanha Henry Townshend, um jovem que se vê 
+                    inexplicavelmente trancado dentro de seu próprio 
+                    apartamento, o quarto 302, na cidade vizinha de 
+                    Ashfield. As janelas estão lacradas e a porta 
+                    principal está acorrentada por dentro. A única 
+                    saída é um buraco misterioso e escuro que surge na 
+                    parede do banheiro, que funciona como um portal 
+                    para realidades alternativas de pesadelo. Henry 
+                    descobre que o apartamento foi o epicentro dos 
+                    rituais macabros cometidos anos antes pelo 
+                    assassino em série Walter Sullivan, que busca 
+                    realizar o ritual dos vinte e um sacramentos.
                 </p>
-
             </div>
-
         </section>
 
         <!-- JOGO -->
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill: Origins (2007)</h2>
-
                 <img src="silenthillorigin.jpg" alt="Silent Hill Origins">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    Desenvolvido originalmente para o console portátil, 
+                    este jogo funciona como uma prequela que explica os 
+                    eventos que antecederam o primeiro jogo da franquia. 
+                    O protagonista é Travis Grady, um caminhoneiro 
+                    solitário atormentado por traumas de infância que 
+                    decide pegar um atalho por Silent Hill. No caminho, 
+                    ele salva uma jovem severamente queimada de um 
+                    incêndio residencial criminoso, que na verdade era 
+                    Alessa Gillespie. Ao tentar descobrir o paradeiro da 
+                    garota no hospital local, Travis se envolve com o 
+                    culto religioso e descobre a mecânica de transitar 
+                    voluntariamente entre o mundo da névoa e o Outro 
+                    Mundo através do reflexo de espelhos espalhados pelas 
+                    salas.
                 </p>
-
             </div>
-
         </section>
 
         <!-- JOGO -->
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill: Homecoming (2008)</h2>
-
                 <img src="homecoming.jpg" alt="Silent Hill Homecoming">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    A história gira em torno de Alex Shepherd, um 
+                    soldado das forças especiais que retorna à sua 
+                    cidade natal, Shepherd's Glen, após ser liberado 
+                    de um hospital militar devido a ferimentos em 
+                    combate. Ao chegar, ele encontra sua mãe em estado 
+                    catatônico e descobre que seu irmão mais novo, 
+                    Joshua, e seu pai desapareceram sem deixar 
+                    vestígios. A busca por respostas o leva a explorar 
+                    as ruas tomadas pela névoa da vizinha Silent Hill. 
+                    Alex desvenda um pacto sombrio e secular realizado 
+                    pelas famílias fundadoras de sua cidade natal, que 
+                    exigia o sacrifício periódico de seus próprios 
+                    filhos para manter uma antiga maldição adormecida.
                 </p>
-
             </div>
-
         </section>
 
         <!-- JOGO -->
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill: Shattered Memories (2009)</h2>
-
                 <img src="shetteredmemories.jpg" alt="Silent Hill Shattered Memories">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    Este jogo funciona como uma reimaginação completa e 
+                    psicológica do primeiro Silent Hill de 1999. O 
+                    jogador controla novamente Harry Mason em busca de 
+                    Cheryl, mas a jogabilidade abandona os combates 
+                    tradicionais e o clima industrial de ferrugem. O 
+                    Outro Mundo agora é representado por cenários 
+                    congelados por um gelo azul profundo, onde o 
+                    protagonista deve correr e escapar de criaturas 
+                    deformadas. O grande diferencial é o teste de 
+                    perfil psicológico realizado no início e durante o 
+                    jogo com um terapeuta, cujas respostas alteram 
+                    dinamicamente o comportamento dos personagens 
+                    secundários, as roupas, os diálogos e o chocante 
+                    final da história.
                 </p>
-
             </div>
-
         </section>
 
         <!-- JOGO -->
-        <section class="card-jogo">
-
+        <section class="card-jogo alvo-busca">
             <div class="imagem-jogo">
                 <h2>Silent Hill: Downpour (2012)</h2>
-
                 <img src="downpour.jpg" alt="Silent Hill Downpour">
             </div>
-
             <div class="texto-jogo">
-
                 <p>
-                    COLOQUE O TEXTO DO JOGO AQUI
+                    O jogo foca na história de Murphy Pendleton, um 
+                    detento que consegue escapar após o ônibus de 
+                    transporte prisional sofrer um grave acidente nos 
+                    arredores de Silent Hill. O diferencial do clima 
+                    desta vez é a chuva intensa e as tempestades que 
+                    caem sobre a cidade, que deixam os monstros locais 
+                    consideravelmente mais agressivos. Murphy explora 
+                    áreas inéditas do complexo urbano, como o sistema 
+                    de bondes subterrâneos e os parques florestais, 
+                    enquanto lida com suas próprias memórias sobre a 
+                    morte de seu filho e a terrível vingança que 
+                    cometeu dentro da prisão, sendo perseguido pela 
+                    figura intimidadora do Bogeyman.
                 </p>
-
             </div>
-
         </section>
-
     </main>
+    <footer>
+        <p>
+            Site desenvolvido para estudos de HTML e CSS
+        </p>
+    </footer>
 
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
+    <script src="../pesquisa.js"></script>
 </body>
 </html>

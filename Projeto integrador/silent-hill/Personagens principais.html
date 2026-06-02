@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="bg-silent">
+<body class="bg-silent" id="topo">
 
     <header>
         <div class="logo">
@@ -14,15 +14,23 @@
         </div>
 
         <nav>
-            <a href="../index.html">Homepage</a>
+            <a href="index.html">Homepage</a>
             <a href="Jogos da franquia.html">Jogos da franquia</a>
             <a href="Personagens principais.html">Personagens principais</a>
             <a href="Inimigos.html">Inimigos</a>
         </nav>
+
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
     </header>
 
     <main class="conteudo">
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Harry Mason</h2>
                 <img src="../imagens/Harrymason.jfif" alt="Harry Mason" class="foto-personagem">
@@ -39,7 +47,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Travis Grady</h2>
                 <img src="../imagens/Travisgrady.jfif" alt="Travis Grady" class="foto-personagem">
@@ -56,7 +64,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>James Sunderland</h2>
                 <img src="../imagens/James-sunderland.jfif" alt="James Sunderland" class="foto-personagem">
@@ -73,7 +81,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Heather Mason</h2>
                 <img src="../imagens/Heathercheryl.jfif" alt="Heather Mason" class="foto-personagem">
@@ -91,7 +99,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Henry Townshend</h2>
                 <img src="../imagens/Henrytownshend.jfif" alt="Henry Townshend" class="foto-personagem">
@@ -109,7 +117,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Alex Shepherd</h2>
                 <img src="../imagens/Alexshepherd.jfif" alt="Alex Shepherd" class="foto-personagem">
@@ -127,7 +135,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Murphy Pendleton</h2>
                 <img src="../imagens/Murphypendleton.jfif" alt="Murphy Pendleton" class="foto-personagem">
@@ -145,7 +153,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Harry Mason (Shattered Memories)</h2>
                 <img src="../imagens/HarryMSM.jpg" alt="Harry Mason Shattered Memories" class="foto-personagem">
@@ -162,7 +170,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Eric e Tina</h2>
                 <img src="../imagens/EriceTina.webp" alt="Eric e Tina" class="foto-personagem">
@@ -180,7 +188,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Ben</h2>
                 <img src="../imagens/orphan.webp" alt="Ben" class="foto-personagem">
@@ -198,7 +206,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Astrid Johansen</h2>
                 <img src="../imagens/Astrid_Johansen.webp" alt="Astrid Johansen" class="foto-personagem">
@@ -216,7 +224,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Anita</h2>
                 <img src="../imagens/Anita.webp" alt="Anita" class="foto-personagem">
@@ -234,7 +242,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>Hinako Shimizu</h2>
                 <img src="../imagens/Hinako.jpg" alt="Hinako Shimizu" class="foto-personagem">
@@ -252,7 +260,7 @@
             </div>
         </section>
 
-        <section class="personagem">
+        <section class="personagem alvo-busca">
             <div class="imagem-personagem">
                 <h2>James Sunderland (Remake)</h2>
                 <img src="../imagens/James-remake.webp" alt="James Remake" class="foto-personagem">
@@ -270,10 +278,16 @@
                     mente.</p>
             </div>
         </section>
-</main>
+    </main>
 
     <footer>
-        <p>Projeto Integrador - Programação Web</p>
+        <p>
+            Site desenvolvido para estudos de HTML e CSS
+        </p>
     </footer>
+
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
+
+    <script src="../pesquisa.js"></script>
 </body>
 </html>

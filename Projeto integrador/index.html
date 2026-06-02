@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-home">
+<body class="bg-home" id="topo">
     <header>
         <div class="logo">
             <h1>HORROR GAMES</h1>
@@ -21,10 +21,18 @@
             <a href="fnaf/index.html">FNAF</a>
             <a href="poppy-playtime/index.html">Poppy Playtime</a>
         </nav>
+
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner alvo-busca">
             <h2>Portal de Jogos de Terror</h2>
             <p>
                 O medo sempre encontrou espaço nos videogames, transformando telas em portais
@@ -43,7 +51,7 @@
             </p>
         </section>
         <section class="cards">
-            <div class="card">
+            <div class="card alvo-busca">
                 <img src="imagens/silent.jpg" alt="Silent Hill">
                 <h3>Silent Hill</h3>
                 <p>
@@ -54,7 +62,8 @@
                     Ver Franquia
                 </a>
             </div>
-            <div class="card">
+            
+            <div class="card alvo-busca">
                 <img src="imagens/fnaf.webp" alt="FNAF">
                 <h3>Five Nights at Freddy's</h3>
                 <p>
@@ -65,7 +74,8 @@
                     Ver Franquia
                 </a>
             </div>
-            <div class="card">
+            
+            <div class="card alvo-busca">
                 <img src="imagens/poppy.jpg" alt="Poppy Playtime">
                 <h3>Poppy Playtime</h3>
                 <p>
@@ -84,5 +94,9 @@
             Projeto integrador - Programação Web
         </p>
     </footer>
+
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
+
+    <script src="pesquisa.js"></script>
 </body>
 </html>

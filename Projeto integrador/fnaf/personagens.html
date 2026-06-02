@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="bg-fnaf">
+<body class="bg-fnaf" id="topo">
 
 	<header>
 
@@ -23,6 +23,13 @@
 			<a href="lore.html">Lore</a>
 		</nav>
 
+		<div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
 	</header>
 
 	<main class="conteudo">
@@ -290,8 +297,11 @@
 	</main>
 
 	<footer>
-		<p>Projeto Integrador - Programação Web</p>
-	</footer>
+        <p>
+            Site desenvolvido para estudos de HTML e CSS
+        </p>
+    </footer>
 
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
 </body>
 </html>

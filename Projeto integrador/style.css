@@ -113,6 +113,73 @@ nav a:hover {
 	color: #ff0000;
 }
 
+/* =========================
+	BARRA DE PESQUISA
+========================= */
+
+.caixa-pesquisa {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.caixa-pesquisa form {
+	display: flex;
+	width: 100%;
+	max-width: 400px; /* Define o tamanho máximo da barra */
+	background: rgba(30, 30, 30, 0.7);
+	border: 2px solid #3d3d3d;
+	border-radius: 25px; /* Deixa as bordas arredondadas */
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+/* Efeito de destaque quando o usuário clica na barra */
+.caixa-pesquisa form:focus-within {
+	border-color: #550000;
+	box-shadow: 0 0 10px #550000;
+}
+
+/* Estilo do campo de texto */
+.caixa-pesquisa input {
+	flex: 1;
+	background: transparent;
+	border: none;
+	padding: 12px 20px;
+	color: white;
+	font-size: 16px;
+	outline: none; /* Remove a borda padrão do navegador */
+}
+
+/* Cor do texto de exemplo (Placeholder) */
+.caixa-pesquisa input::placeholder {
+	color: #888888;
+}
+
+/* Estilo do botão de lupa */
+.caixa-pesquisa button {
+	background: transparent;
+	border: none;
+	color: white;
+	padding: 0 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão da lupa */
+.caixa-pesquisa button:hover {
+	color: #ff0000;
+	transform: scale(1.1);
+}
+
+/* Ajuste para telas de celulares */
+@media screen and (max-width: 900px) {
+	.caixa-pesquisa form {
+		max-width: 90%; /* Ocupa quase toda a largura em telas menores */
+	}
+}
+
 
 /* =========================
 	CONTEÚDO
@@ -129,6 +196,22 @@ nav a:hover {
 
 	animation: aparecer 1s ease;
 	box-shadow: 0 0 20px rgba(80,0,0,0.35);
+}
+
+/* =========================
+	SUBSEÇÕES DA LORE
+========================= */
+
+.bloco-lore {
+	margin-top: 40px;
+	border-top: 1px dashed #3d3d3d; /* Linha sutil separando os blocos */
+	padding-top: 25px;
+}
+
+/* Remove a linha separadora apenas do primeiro bloco para não ficar colado no H1 */
+.bloco-lore:first-of-type {
+	border-top: none;
+	padding-top: 10px;
 }
 
 
@@ -349,4 +432,70 @@ footer {
 		width: 180px;
 		height: 220px;
 	}
+}
+
+/* =========================
+	ROLAGEM SUAVE (Adicionar no início ou fim do arquivo)
+========================= */
+html {
+	scroll-behavior: smooth;
+}
+
+/* =========================
+	BOTÃO VOLTAR AO TOPO
+========================= */
+
+.btn-topo {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 50px;
+	height: 50px;
+	
+	/* Cores combinando com o tema de terror do site */
+	background: #550000;
+	color: white;
+	border: 2px solid #3d3d3d;
+	border-radius: 50px;
+	
+	/* Alinhamento da seta */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	text-decoration: none;
+	
+	/* Sombras e transições iguais às dos seus cards */
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	transition: 0.3s;
+	z-index: 1000;
+}
+
+/* Efeito Hover (passar o mouse) seguindo o padrão do seu site */
+.btn-topo:hover {
+	background: #880000;
+	box-shadow: 0 0 20px #550000;
+	transform: scale(1.08);
+}
+
+/* Ajuste de posição para telas menores */
+@media screen and (max-width: 900px) {
+	.btn-topo {
+		bottom: 15px;
+		right: 15px;
+		width: 45px;
+		height: 45px;
+		font-size: 18px;
+	}
+}
+
+/* =========================
+   DESTAQUE DA PESQUISA
+========================= */
+.destaque-busca {
+    background-color: #ff0000;
+    color: white;             
+    padding: 2px 4px;          
+    border-radius: 4px;        
+    font-weight: bold;         
 }

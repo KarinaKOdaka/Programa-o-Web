@@ -6,7 +6,7 @@
     <link href="../style.css" rel="stylesheet">
 </head>
 
-<body class="bg-poppy">
+<body class="bg-poppy" id="topo">
     <header>
         <div class="logo">
             <img src="../imagens/" alt="Logo Poppy Playtime" class="logo-img">
@@ -17,14 +17,25 @@
             <a href="capitulos.html">Capítulos</a>
             <a href="personagens.html">Personagens principais</a>
             <a href="criaturas.html">Criaturas</a>
+            <a href="itens.html">Itens Coletáveis</a>
         </nav>
+
+        <div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
     </header>
 
     <main>
         <section class="conteudo">
             <h1>Sobre os personagens</h1>
             <p>
-                P
+                Os personagens de Poppy Playtime possuem papéis importantes na história da Playtime Co., 
+                seja como funcionários, cientistas ou sobreviventes ligados aos acontecimentos sombrios da fábrica. 
+                Cada um contribuiu de alguma forma para os experimentos secretos e para o colapso da empresa.
             </p>
         </section>
 
@@ -35,7 +46,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    O protagonista é um ex-funcionário da Playtime Co. que retorna à fábrica abandonada após receber uma misteriosa carta.
+                    Sua identidade nunca é revelada completamente, permitindo que o jogador se sinta diretamente inserido na história.
+                    Ao longo da jornada, ele explora os corredores da fábrica, descobre fitas VHS escondidas e revela os terríveis
+                    experimentos realizados com crianças e funcionários. Apesar de parecer apenas um sobrevivente tentando escapar,
+                    diversos indícios sugerem que o protagonista conhecia os segredos da empresa antes do desaparecimento em massa.
                 </p>
             </div>
         </section>
@@ -47,7 +62,12 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Elliot Ludwig foi o fundador da Playtime Co. e o responsável pela criação da famosa fábrica de brinquedos.
+                    Inicialmente, ele desejava criar brinquedos capazes de levar alegria às crianças, especialmente órfãos.
+                    Porém, com o crescimento da empresa, os projetos científicos começaram a ultrapassar limites éticos.
+                    Mesmo sendo lembrado como um homem gentil e visionário, muitas teorias apontam que Elliot sabia dos experimentos
+                    secretos envolvendo transformação humana e manipulação biológica. Sua presença ainda é sentida em diversos registros
+                    espalhados pela fábrica.
                 </p>
             </div>
         </section>
@@ -59,7 +79,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Harley Sawyer foi o principal cientista da Playtime Co. e um dos maiores responsáveis pelos experimentos realizados
+                    dentro da fábrica. Extremamente inteligente e frio, ele acreditava que o sofrimento era necessário para alcançar
+                    resultados científicos perfeitos. Sawyer conduziu testes em crianças órfãs, transformando-as em criaturas vivas
+                    utilizadas como brinquedos. Sua personalidade cruel e manipuladora fez dele uma das figuras mais perigosas da história
+                    da empresa. Muitos dos horrores encontrados na fábrica existem por causa de suas decisões.
                 </p>
             </div>
         </section>
@@ -71,7 +95,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Leith Pierre era um dos executivos da Playtime Co. e atuava diretamente na administração da empresa.
+                    Diferente dos cientistas, sua preocupação principal era manter os lucros e a imagem pública da fábrica.
+                    Mesmo sabendo que experimentos perigosos estavam acontecendo, Pierre preferiu ignorar as consequências,
+                    acreditando que os resultados poderiam tornar a empresa ainda mais poderosa. Ele aparece em gravações antigas
+                    demonstrando orgulho pelos avanços da companhia, revelando sua ganância e falta de empatia.
                 </p>
             </div>
         </section>
@@ -83,7 +111,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Stella Greyber trabalhava na Playtime Co. no setor de cuidados infantis e desenvolvimento educacional.
+                    Ela era conhecida por sua personalidade alegre e energética, além de incentivar as crianças a nunca crescerem
+                    emocionalmente. Apesar de parecer gentil, Stella também estava ligada ao ambiente perturbador da fábrica e aos
+                    programas envolvendo órfãos. Seus discursos demonstram uma visão distorcida sobre infância eterna, algo que combina
+                    diretamente com os experimentos realizados pela empresa.
                 </p>
             </div>
         </section>
@@ -95,7 +127,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Eddie Ritterman era o responsável pela segurança e pela manutenção de algumas áreas da Playtime Co.
+                    Embora não fosse um cientista, ele conhecia parte dos acontecimentos secretos dentro da fábrica.
+                    Eddie demonstrava preocupação com o comportamento estranho das criaturas e com o desaparecimento de funcionários,
+                    mas tinha medo de confrontar diretamente os superiores. Sua história representa os trabalhadores comuns que acabaram
+                    presos em meio ao caos causado pelos experimentos.
                 </p>
             </div>
         </section>
@@ -107,7 +143,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Ollie é uma misteriosa criança que ajuda o protagonista durante os acontecimentos do terceiro capítulo.
+                    Ele se comunica por telefone, fornecendo orientações e informações importantes sobre a fábrica.
+                    Apesar de aparentar ser amigável e confiável, sua verdadeira identidade permanece desconhecida.
+                    Muitos jogadores acreditam que Ollie possa ser uma vítima dos experimentos ou até mesmo uma inteligência manipulando
+                    os acontecimentos nos bastidores. Seu comportamento enigmático faz dele um dos personagens mais misteriosos da série.
                 </p>
             </div>
         </section>
@@ -119,7 +159,10 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Jessica Newman foi uma funcionária ligada aos setores internos da Playtime Co., especialmente nas áreas administrativas.
+                    Embora poucas informações oficiais existam sobre ela, registros indicam que Jessica testemunhou acontecimentos perturbadores
+                    dentro da fábrica. Sua participação ajuda a mostrar como muitos funcionários começaram a perceber os horrores da empresa,
+                    mas eram silenciados ou ignorados pelos superiores.
                 </p>
             </div>
         </section>
@@ -131,7 +174,10 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Dra. Gracie Green, também conhecida como Srta Gracie, era uma cientista envolvida nos estudos comportamentais
+                    e psicológicos realizados na Playtime Co. Ela ajudava na análise das reações das crianças utilizadas nos experimentos.
+                    Embora aparentasse ser calma e profissional, seus relatórios revelam uma visão extremamente fria sobre sofrimento humano.
+                    Sua participação foi importante para o desenvolvimento das criaturas inteligentes presentes na fábrica.
                 </p>
             </div>
         </section>
@@ -143,7 +189,11 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Bruno White foi um dos cientistas associados aos projetos secretos da Playtime Co.
+                    Ele trabalhou ao lado de Harley Sawyer no desenvolvimento de experimentos biológicos.
+                    Apesar de não possuir tanta autoridade quanto Sawyer, Bruno participou diretamente das pesquisas envolvendo
+                    transformação corporal e criação de criaturas vivas. Sua dedicação à ciência o levou a ignorar completamente
+                    os aspectos éticos dos testes realizados na fábrica.
                 </p>
             </div>
         </section>
@@ -155,7 +205,10 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Richard Lovitz, conhecido como Rich, era um funcionário comum da Playtime Co. que trabalhava em áreas técnicas
+                    da fábrica. Ele aparece em gravações demonstrando nervosismo e desconforto com o ambiente cada vez mais estranho
+                    do local. Rich representa os trabalhadores que começaram a perceber que algo terrível acontecia nos bastidores,
+                    mas não tinham poder suficiente para impedir os experimentos.
                 </p>
             </div>
         </section>
@@ -167,7 +220,10 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Jimmy Roth era um funcionário relacionado aos sistemas internos e operações da Playtime Co.
+                    Existem poucos registros sobre sua vida, mas documentos indicam que ele esteve presente durante os períodos mais sombrios
+                    da empresa. Jimmy teria testemunhado eventos ligados aos experimentos e ao desaparecimento de funcionários,
+                    tornando-se mais uma vítima indireta da corrupção existente dentro da fábrica.
                 </p>
             </div>
         </section>
@@ -179,10 +235,21 @@
             </div>
             <div class="texto-personagem">
                 <p>
-                    l
+                    Thomas Clarke fazia parte do grupo de cientistas conhecidos como "cientistas codificados", profissionais responsáveis
+                    pelos experimentos secretos mais avançados da Playtime Co. Esses cientistas utilizavam códigos e identificações
+                    especiais para esconder suas identidades e proteger os projetos da empresa. Thomas participou de pesquisas envolvendo
+                    inteligência artificial, modificação corporal e controle comportamental das criaturas. O grupo inteiro simboliza o lado
+                    mais sombrio e desumano da Playtime Co.
                 </p>
             </div>
         </section>
+
+        <footer>
+            <p>
+                Site desenvolvido para estudos de HTML e CSS
+            </p>
+        </footer>
+        <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
     </main>
 </body>
 </html>
