@@ -1,2 +1,0 @@
-Olá, Aluno FATEC!
-O resultado da soma é: 40
