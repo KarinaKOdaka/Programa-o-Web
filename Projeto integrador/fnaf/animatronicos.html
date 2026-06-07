@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<title>Animatronics - Five Nights at Freddy's</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-fnaf" id="topo">
+
+	<header>
+		<div class="logo">
+			<img src="../imagens/fnaf-logo.png"
+				 alt="Logo FNaF"
+				 class="logo-img">
+		</div>
+
+		<nav>
+			<a href="index.html">Homepage</a>
+			<a href="jogos.html">Jogos</a>
+			<a href="personagens.html">Personagens</a>
+			<a href="animatronicos.html">Animatronics</a>
+			<a href="lore.html">Lore</a>
+		</nav>
+
+		<div class="caixa-pesquisa">
+            <form onsubmit="event.preventDefault();">
+                <input type="text" id="campo-busca" placeholder="Pesquisar no site...">
+                <button type="button" id="btn-busca">🔍</button>
+            </form>
+            <p id="resultado-busca"></p>
+        </div>
+	</header>
+
+	<main>
+
+		<section class="conteudo alvo-busca">
+			<h2>Os principais animatronics da franquia</h2>
+
+			<p>
+				A franquia Five Nights at Freddy's possui dezenas de
+				animatrônicos marcantes. Cada jogo apresenta robôs
+				com mecânicas, histórias e personalidades próprias,
+				que ajudam a construir o terror tecnológico da série.
+			</p>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's (2014) — Freddy Fazbear</h2>
+				<img src="../imagens/freddy.jpg"
+					 alt="Freddy Fazbear"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+					O urso pardo animatrônico principal e o líder do palco na Freddy 
+                    Fazbear's Pizza. Durante a noite, sua inteligência artificial faz 
+                    com que ele se mova de maneira discreta a partir da Noite 3, 
+                    escondendo-se nas áreas escuras das câmeras de segurança e rindo 
+                    toda vez que avança de sala. Se a energia do escritório se esgotar 
+                    por completo, ele aparece na porta esquerda piscando seus olhos 
+                    iluminados e tocando uma melodia em caixinha de música antes de 
+                    desferir seu ataque.
+				</p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's 2 (2014) — The Puppet</h2>
+				<img src="../imagens/puppet.jpg"
+					 alt="The Puppet"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Uma marionete esguia de rosto pintado que habita o interior de uma 
+                    grande caixa de presentes na Prize Corner. O jogador precisa usar o 
+                    monitor de segurança para dar corda na sua caixa de música 
+                    continuamente; caso o cronômetro chegue a zero, o Puppet sai de seu 
+                    recipiente e avança pelo corredor principal até o escritório de forma 
+                    inevitável. Ele é imune ao uso da máscara de Freddy e à lanterna, 
+                    encerrando a partida assim que alcança a sala de segurança.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's 3 (2015) — Springtrap</h2>
+				<img src="../imagens/springtrap.jpg"
+					 alt="Springtrap"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    O único animatrônico físico e funcional capaz de encerrar a partida na 
+                    atração Fazbear's Fright. Trata-se de um modelo protótipo desgastado 
+                    de coelho dourado que funciona com o sistema de trajes de molas 
+                    (springlocks). A lore do jogo estabelece que o corpo do assassino em 
+                    série William Afton foi esmagado e preso permanentemente dentro de suas 
+                    engrenagens metálicas trinta anos antes, forçando o jogador a usar 
+                    dispositivos de áudio infantil para atraí-lo de sala em sala.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's 4 (2015) — Nightmare Fredbear</h2>
+				<img src="../imagens/nightmare_fredbear.jpeg"
+					 alt="Nightmare Fredbear"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Uma versão colossal e danificada do urso dourado original, equipada 
+                    com várias fileiras de dentes afiados nas garras, na mandíbula e em 
+                    uma abertura torácica secundária localizada em sua barriga. Ele atua 
+                    de forma solitária nas noites avançadas do jogo, exigindo que o 
+                    jogador utilize o sistema de áudio e fones de ouvido para monitorar 
+                    rapidamente os passos nos dois corredores laterais, as risadas na cama 
+                    e os ruídos dentro do armário do quarto.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>FNaF World (2016) — Adventure Freddy</h2>
+				<img src="../imagens/adventurefreddy.jpg"
+					 alt="Adventure Freddy"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    A versão compacta, estilizada e amigável do protagonista clássico 
+                    criada para atuar como o líder inicial da equipe neste spin-off de 
+                    RPG. No sistema de combate por turnos, ele possui um conjunto de 
+                    habilidades ativas voltadas para dano e suporte, como o arremesso de 
+                    microfones e melodias que aumentam a velocidade do grupo, ajudando a 
+                    combater os bugs e falhas digitais que corrompem o universo do jogo.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Sister Location (2016) — Circus Baby</h2>
+				<img src="../imagens/circusbaby.jpg"
+					 alt="Circus Baby"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Uma animatrônica palhaço de grande porte projetada especificamente 
+                    com tecnologias de entretenimento avançadas, que incluem um 
+                    dispensador de sorvete interno e um sistema de armazenamento corporal. 
+                    Ela lidera os robôs da instalação subterrânea Circus Baby's 
+                    Entertainment and Rental e interage diretamente com o técnico através 
+                    de dicas e instruções por áudio para ajudá-lo a sobreviver, ocultando 
+                    sua participação no plano de fuga do grupo.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Freddy Fazbear's Pizzeria Simulator (2017) — Scraptrap</h2>
+				<img src="../imagens/scraptrap.jpg"
+					 alt="Scrap Baby"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    A forma física severamente danificada e alterada de William Afton 
+                    após os incêndios ocorridos nos estabelecimentos anteriores da marca. 
+                    Ele se infiltra nos dutos de ventilação da pizzaria de fachada montada 
+                    pelo jogador, movendo-se de forma agressiva em direção ao escritório de 
+                    gerenciamento, exigindo que o operador utilize ferramentas de áudio para 
+                    desviá-lo e o sensor de movimento para rastreá-lo.
+                </p>
+			</div>
+		</section>
+
+        <section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Ultimate Custom Night (2018) — Golden Freddy</h2>
+				<img src="../imagens/goldenfreddy.jfif"
+					 alt="Dee Dee"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Uma aparição fantasmagórica que se materializa diretamente dentro do 
+                    escritório do jogador de forma aleatória logo após a aba do monitor 
+                    de segurança ser fechada. Para evitar o ataque fatal, o jogador 
+                    precisa ter um tempo de reação extremamente rápido para colocar a 
+                    máscara de Freddy instantaneamente ou levantar o monitor novamente 
+                    para fazê-lo desaparecer. Caso o jogador utilize a ferramenta secreta 
+                    "Death Coin" para eliminá-lo da partida, um gatilho especial é 
+                    acionado, resultando em um susto imediato do personagem Fredbear.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Ultimate Custom Night (2018) — Dee Dee</h2>
+				<img src="../imagens/deedee.jpg"
+					 alt="Dee Dee"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    A pequena animatrônica pescadora que surge de forma completamente 
+                    aleatória durante as partidas no escritório. Sua mecânica principal é 
+                    cantar uma música curta que altera as regras da noite atual, sendo 
+                    responsável por adicionar um novo animatrônico surpresa ao jogo com 
+                    um nível de inteligência desconhecido (podendo variar de 1 a 20) ou 
+                    invocar personagens secretos que não estão na lista padrão, quebrando 
+                    qualquer estratégia de defesa pré-planejada pelo jogador.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Help Wanted (2019) — Glitchtrap</h2>
+				<img src="../imagens/glitchtrap.webp"
+					 alt="Glitchtrap"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Uma anomalia digital na forma de um coelho amarelado humanoide feito 
+                    de texturas remendadas. Ele surge como um vírus dentro do software de 
+                    realidade virtual desenvolvido pela Fazbear Entertainment após a 
+                    equipe de programação escanear placas de circuito antigas. Ele observa 
+                    o jogador a partir dos menus e das fases secundárias, aproximando-se 
+                    gradualmente com o objetivo de corromper o arquivo de salvamento e 
+                    transferir sua consciência.
+                </p>
+			</div>
+		</section>
+
+        <section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Special Delivery (2019) — Freddy Fazbear (AR)</h2>
+				<img src="../imagens/freddyfazbear.webp"
+					 alt="Glitchtrap"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    O robô padrão enviado para as residências dos usuários através do 
+                    serviço de assinatura domiciliar "Fazbear Funtime Service". Devido a 
+                    falhas críticas na linha de programação de comportamento, ele entra 
+                    em modo de mau funcionamento hostil. O jogador deve usar a câmera do 
+                    smartphone para rastrear sua estática no ambiente real, utilizando a 
+                    lanterna para localizá-lo e o botão de choque controlado quando ele 
+                    se materializar em plena investida.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Security Breach (2021) — Glamrock Freddy</h2>
+				<img src="../imagens/glamrockfreddy.jpg"
+					 alt="Glamrock Freddy"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    A principal atração musical do shopping Mega Pizzaplex. Após sofrer 
+                    uma pane técnica no palco devido a um erro de leitura de dados, ele 
+                    reinicia em modo de segurança e torna-se imune ao vírus que controla 
+                    os outros animatrônicos do complexo. Ele atua como um aliado direto do 
+                    jogador, permitindo que Gregory entre em seu compartimento torácico 
+                    para se camuflar, além de fornecer dicas sobre o mapa e recarregar 
+                    suas baterias em estações específicas.
+                </p>
+			</div>
+		</section>
+
+		<section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>FNAF Security Breach: Ruin (2023) — The Mimic</h2>
+				<img src="../imagens/mimic.webp"
+					 alt="The Mimic"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    Um endosqueleto mecânico antigo que possui a capacidade de alterar 
+                    sua própria estrutura física para se ajustar a trajes antigos e 
+                    imitar perfeitamente o comportamento e os padrões de voz humanos. Ele 
+                    atua trancado nos subsolos profundos do Pizzaplex destruído, 
+                    utilizando um sinal de rádio modificado para simular a voz de Gregory 
+                    e guiar Cassie até o local de seu aprisionamento para que ela quebre 
+                    o sistema de contenção.
+                </p>
+			</div>
+		</section>
+
+        <section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Help Wanted 2 (2023) — Vanny</h2>
+				<img src="../imagens/vanny.jpg"
+					 alt="The Mimic"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    A seguidora humana influenciada pelo vírus digital que se manifesta 
+                    como uma figura antagonista proeminente dentro das simulações da 
+                    Fazbear. Suas aparições ocorrem em minijogos de precisão técnica e 
+                    rotinas de manutenção, onde ela monitora as ações do jogador de forma 
+                    estática nas sombras ou surge como um gatilho para telas de game over 
+                    caso o usuário cometa erros consecutivos na fiação e nos protocolos de 
+                    segurança.
+                </p>
+			</div>
+		</section>
+
+        <section class="personagem alvo-busca">
+			<div class="imagem-personagem">
+				<h2>Five Nights at Freddy's: Secret of the Mimic (2025) — The Mimic (Origem)</h2>
+				<img src="../imagens/themimic.jpg"
+					 alt="The Mimic"
+					 class="foto-personagem">
+			</div>
+
+			<div class="texto-personagem">
+				<p>
+                    O foco central e antagonista deste capítulo focado nas origens 
+                    tecnológicas da empresa. Nesta versão inicial de sua linha de 
+                    montagem, o endosqueleto exibe capacidades primitivas de rastreamento 
+                    de movimentos e replicação mecânica de rotinas industriais. Ele caça 
+                    o jogador utilizando o cenário da fábrica antiga, alterando sua 
+                    velocidade e tamanho ao interagir com ferramentas pesadas e moldes de 
+                    trajes descartados para bloquear as saídas do complexo.
+                </p>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+        <p>
+            Site desenvolvido para estudos de HTML e CSS
+        </p>
+    </footer>
+
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">⬆</a>
+	<script src="../pesquisa.js"></script>
+</body>
+</html>

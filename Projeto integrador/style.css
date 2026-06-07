@@ -1,0 +1,562 @@
+/* =========================
+	BODY
+========================= */
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+
+/* =========================
+	BACKGROUNDS
+========================= */
+
+.bg-home {
+	background-image:
+	linear-gradient(rgba(0,0,0,0.75), rgba(15,15,15,0.85)),
+	url("imagens/tela_inicial.jpg");
+}
+
+.bg-silent {
+	background-image:
+	linear-gradient(rgba(0,0,0,0.75), rgba(15,15,15,0.85)),
+	url("imagens/silent-hill-banner.jpg");
+}
+
+.bg-fnaf {
+	background-image:
+	linear-gradient(rgba(0,0,0,0.80), rgba(15,15,15,0.90)),
+	url("imagens/fnaf-banner.png");
+}
+
+.bg-poppy {
+	background-image:
+	linear-gradient(rgba(0,0,0,0.70), rgba(15,15,15,0.85)),
+	url("imagens/poppy.jpg");
+}
+
+.bg-home,
+.bg-silent,
+.bg-fnaf,
+.bg-poppy {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+
+/* =========================
+	HEADER
+========================= */
+
+header {
+	background: rgba(17,17,17,0.95);
+	padding: 20px;
+	border-bottom: 3px solid #550000;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo-img {
+	width: 340px;
+	max-width: 90%;
+}
+
+
+/* =========================
+	TÍTULOS
+========================= */
+
+h1 {
+	margin: 0;
+	font-size: 34px;
+	animation: brilho 2s infinite alternate;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 24px;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+/* =========================
+	MENU
+========================= */
+
+nav {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 15px;
+	flex-wrap: wrap;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+nav a:hover {
+	color: #ff0000;
+}
+
+/* =========================
+	BARRA DE PESQUISA
+========================= */
+
+.caixa-pesquisa {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.caixa-pesquisa form {
+	display: flex;
+	width: 100%;
+	max-width: 400px; /* Define o tamanho máximo da barra */
+	background: rgba(30, 30, 30, 0.7);
+	border: 2px solid #3d3d3d;
+	border-radius: 25px; /* Deixa as bordas arredondadas */
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+/* Efeito de destaque quando o usuário clica na barra */
+.caixa-pesquisa form:focus-within {
+	border-color: #550000;
+	box-shadow: 0 0 10px #550000;
+}
+
+/* Estilo do campo de texto */
+.caixa-pesquisa input {
+	flex: 1;
+	background: transparent;
+	border: none;
+	padding: 12px 20px;
+	color: white;
+	font-size: 16px;
+	outline: none; /* Remove a borda padrão do navegador */
+}
+
+/* Cor do texto de exemplo (Placeholder) */
+.caixa-pesquisa input::placeholder {
+	color: #888888;
+}
+
+/* Estilo do botão de lupa */
+.caixa-pesquisa button {
+	background: transparent;
+	border: none;
+	color: white;
+	padding: 0 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão da lupa */
+.caixa-pesquisa button:hover {
+	color: #ff0000;
+	transform: scale(1.1);
+}
+
+/* Ajuste para telas de celulares */
+@media screen and (max-width: 900px) {
+	.caixa-pesquisa form {
+		max-width: 90%; /* Ocupa quase toda a largura em telas menores */
+	}
+}
+
+
+/* =========================
+	CONTEÚDO
+========================= */
+
+.conteudo {
+	width: 85%;
+	margin: 40px auto;
+	padding: 30px;
+
+	background: rgba(17,17,17,0.92);
+	border: 2px solid #3d3d3d;
+	border-radius: 15px;
+
+	animation: aparecer 1s ease;
+	box-shadow: 0 0 20px rgba(80,0,0,0.35);
+}
+
+/* =========================
+	SUBSEÇÕES DA LORE
+========================= */
+
+.bloco-lore {
+	margin-top: 40px;
+	border-top: 1px dashed #3d3d3d; /* Linha sutil separando os blocos */
+	padding-top: 25px;
+}
+
+/* Remove a linha separadora apenas do primeiro bloco para não ficar colado no H1 */
+.bloco-lore:first-of-type {
+	border-top: none;
+	padding-top: 10px;
+}
+
+
+/* =========================
+	TEXTO
+========================= */
+
+p {
+	font-size: 17px;
+	text-align: justify;
+	line-height: 1.7;
+}
+
+
+/* =========================
+	BANNER
+========================= */
+
+.banner {
+	width: 85%;
+	margin: 40px auto;
+	padding: 40px;
+	text-align: center;
+
+	background: rgba(17,17,17,0.85);
+	border-radius: 15px;
+	border: 2px solid #3d3d3d;
+}
+
+
+/* =========================
+	CARDS
+========================= */
+
+.cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin: 50px auto;
+	width: 90%;
+}
+
+.card {
+	width: 320px;
+	background: rgba(17,17,17,0.95);
+	border-radius: 12px;
+	overflow: hidden;
+	border: 2px solid #3d3d3d;
+	transition: 0.4s;
+}
+
+.card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 0 20px #550000;
+}
+
+.card img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+
+.card p {
+	padding: 0 15px;
+}
+
+.card a {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	background: #550000;
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.card a:hover {
+	background: #880000;
+}
+
+
+/* =========================
+    PERSONAGENS
+========================= */
+
+.personagem {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+
+	background: rgba(17,17,17,0.95);
+	border: 2px solid #3d3d3d;
+	border-radius: 15px;
+
+	padding: 25px;
+	margin: 35px 0;
+
+	transition: 0.4s;
+}
+
+.personagem:hover {
+	box-shadow: 0 0 20px #550000;
+}
+
+.imagem-personagem {
+	width: 220px;
+	min-width: 220px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.foto-personagem {
+	width: 200px;
+	height: 250px;
+
+	object-fit: cover;
+	object-position: center;
+
+	border-radius: 12px;
+	border: 3px solid #550000;
+}
+
+.texto-personagem {
+	flex: 1;
+}
+
+/* =========================
+    JOGOS DA FRANQUIA
+========================= */
+
+.jogo {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+
+	background: rgba(17,17,17,0.95);
+	border: 2px solid #3d3d3d;
+	border-radius: 15px;
+
+	padding: 25px;
+	margin: 35px 0;
+
+	transition: 0.4s;
+}
+
+.jogo:hover {
+	box-shadow: 0 0 20px #550000;
+}
+
+.imagem-jogo {
+    width: 250px;
+    min-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-jogo h2 {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.foto-jogo {
+    width: 220px;
+    max-height: 320px;
+    height: auto;
+
+    border-radius: 12px;
+    border: 3px solid #550000;
+}
+
+.texto-jogo {
+	flex: 1;
+}
+
+
+/* =========================
+	TABELAS
+========================= */
+/*
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 15px;
+}
+*/
+
+/* =========================
+	FOOTER
+========================= */
+
+footer {
+	background: rgba(17,17,17,0.95);
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+	border-top: 3px solid #550000;
+}
+
+
+/* =========================
+	ANIMAÇÕES
+========================= */
+
+@keyframes aparecer {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes brilho {
+	from {
+		text-shadow: 0 0 5px white;
+	}
+	to {
+		text-shadow: 0 0 15px #660000;
+	}
+}
+
+
+/* =========================
+	RESPONSIVIDADE
+========================= */
+
+@media screen and (max-width: 900px) {
+
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	.conteudo,
+	.banner {
+		width: 95%;
+		padding: 20px;
+	}
+
+	.card {
+		width: 95%;
+	}
+
+	.personagem,
+	.jogo {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.imagem-personagem,
+	.imagem-jogo {
+		width: 100%;
+	}
+
+	.foto-personagem {
+		width: 180px;
+		height: 220px;
+	}
+
+	.foto-jogo {
+		width: 180px;
+		height: 250px;
+	}
+}
+
+/* =========================
+	ROLAGEM SUAVE (Adicionar no início ou fim do arquivo)
+========================= */
+html {
+	scroll-behavior: smooth;
+}
+
+/* =========================
+	BOTÃO VOLTAR AO TOPO
+========================= */
+
+.btn-topo {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 50px;
+	height: 50px;
+	
+	/* Cores combinando com o tema de terror do site */
+	background: #550000;
+	color: white;
+	border: 2px solid #3d3d3d;
+	border-radius: 50px;
+	
+	/* Alinhamento da seta */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	text-decoration: none;
+	
+	/* Sombras e transições iguais às dos seus cards */
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	transition: 0.3s;
+	z-index: 1000;
+}
+
+/* Efeito Hover (passar o mouse) seguindo o padrão do seu site */
+.btn-topo:hover {
+	background: #880000;
+	box-shadow: 0 0 20px #550000;
+	transform: scale(1.08);
+}
+
+/* Ajuste de posição para telas menores */
+@media screen and (max-width: 900px) {
+	.btn-topo {
+		bottom: 15px;
+		right: 15px;
+		width: 45px;
+		height: 45px;
+		font-size: 18px;
+	}
+}
+
+/* =========================
+   DESTAQUE DA PESQUISA
+========================= */
+.destaque-busca {
+    background-color: #ff0000;
+    color: white;             
+    padding: 2px 4px;          
+    border-radius: 4px;        
+    font-weight: bold;         
+}

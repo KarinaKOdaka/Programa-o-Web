@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de matrícula</title>
+</head>
+<body>
+    <form action="/cadastro" method="post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        Nome: <input type="text" name="nome" required minlength="5" placeholder="Digite seu nome"><br>
+        Email: <input type="email" name="email" required placeholder="seunome@gmail.com"><br>
+        Data de nascimento: <input type="date" name="data"><br>
+        CPF: <input type="text" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+    </fieldset>
+    <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        Curso:
+        <select name="Curso">
+            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+            <option value="GE">Gestão Empresarial</option>
+            <option value="COMEX">Comércio Exterior</option>
+        </select><br>
+        <input type="radio" name="periodo" value="manhã" id="m">
+        <label for="m">Manhã</label>
+        <input type="radio" name="periodo" value="noite" id="n">
+        <label for="n">Noite</label><br>
+        Já programou antes?<br>
+        <input type="checkbox" name="sim" id="s">
+        <label for="prog">Sim</label>
+        <input type="checkbox" name="não" id="n">
+        <label for="prog">Não</label>
+    </fieldset>
+    <p>
+        Observações:<br>
+        <textarea name="observacoes" rows="5" cols="30"></textarea>
+    </p>
+    <button type="submit">Enviar Matrícula</button>
+    </form>
+</body>
+</html>

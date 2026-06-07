@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 15px;
+        }
+        input {
+            padding: 8px;
+        }
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            list-style: none;
+            cursor: pointer;
+        }
+        .concluida {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="busca" placeholder="Buscar tarefa">
+    <br><br>
+    <form id="formulario">
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="lista"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
